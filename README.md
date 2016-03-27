@@ -1,4 +1,5 @@
-# icews
+# ICEWS Data Download Pipeline
 
 Usage:
-  python main.py --local-scheduler Main
+
+- python main.py --local-scheduler Main
