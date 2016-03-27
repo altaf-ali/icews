@@ -1,0 +1,12 @@
+name: icews
+dependencies:
+- pip
+- python
+- scipy
+- numpy
+- pandas
+- matplotlib
+- jupyter
+- requests
+- luigi
+- pyyaml
