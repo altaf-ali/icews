@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/icews.css">
+    <link rel="stylesheet" type="text/css" href="lib/d3.slider/0.1.0/d3.slider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <title>ICEWS Event Data</title>
+</head>
+<body>
+    <script src="lib/d3/d3.v3.min.js"></script>
+    <script src="lib/d3/d3.geo.projection.v0.min.js"></script>
+    <script src="lib/d3/queue.v1.min.js"></script>
+    <script src="lib/d3/colorbrewer.v1.min.js"></script>
+    <script src="lib/d3/topojson.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="lib/d3.slider/0.1.0/d3.slider.js"></script>
+    <script src="lib/spin/spin.min.js"></script>
+
+    <div id="container">
+        <div id="header">
+            <div id="header-title">
+                <h3>ICEWS Event Data</h3>
+            </div>
+            <div id="header-subtitle">
+                <span id="intro">
+                    An interactive visualization of ICEWS event data. The size of each bubble represents the count of events
+                    extracted by ICEWS and the color represents the mean intensity according to the CAMEO coding scheme.
+                </span>
+            </div>
+        </div>
+        <div id="content">
+            <div id="map-container"></div>
+        </div>
+        <div id="footer">
+            <div id="controlbar">
+
+                <div id="status-control">
+                    <p id="date"></p>
+                </div>
+
+                <div id="play-control">
+                    <button id="play-button" class="btn btn-default btn-xs">
+                        <span id="play" class="glyphicon glyphicon-play"></span>
+                    </button>
+                </div>
+
+                <div id="backward-control">
+                    <button id="backward-button" class="btn btn-default btn-xs">
+                        <span id="step-backward" class="glyphicon glyphicon-step-backward"></span>
+                    </button>
+                </div>
+
+                <div id="forward-control">
+                    <button id="forward-button" class="btn btn-default btn-xs">
+                        <span id="step-forward" class="glyphicon glyphicon-step-forward"></span>
+                    </button>
+                </div>
+
+
+                <div id="slider-control">
+                    <div id="slider"></div>
+                    <div id="slider-probe">
+                        <p></p>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/icews.js"></script>
+
+</body>
+</html>

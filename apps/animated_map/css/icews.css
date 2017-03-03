@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font: 14px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h3 {
+    display: inline;
+    color: #999;
+}
+
+text {
+    pointer-events: none;
+}
+
+p#intro {
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+div#container {
+    height: 100%;
+}
+
+div#header {
+    margin: 10px;
+    padding-left: 10px;
+}
+
+div#header-title {
+    margin-top: 2px;
+    width: 75%;
+}
+
+div#header-subtitle {
+    margin-top: 10px;
+    width: 75%;
+}
+
+div#content {
+    height: 100%;
+}
+
+div#map-container {
+    /* background: grey; */
+    height: 100%;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+.country {
+    fill: #f8f6f8;
+}
+
+.country.Antarctica {
+    fill: white;
+}
+
+.country-label {
+    fill: #777;
+    fill-opacity: 1;
+    font-size: 2px;
+    font-weight: 400;
+    text-anchor: middle;
+}
+
+circle {
+    opacity: 0.75
+}
+
+div#footer {
+    /* background: red; */
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+div#controlbar {
+    margin: 20px;
+}
+
+div#status-control p#date {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#play-control, #backward-control, #forward-control {
+    margin: 5px 3px 5px 0px;
+    float: left;
+}
+#play-control {
+    margin-right: 10px;
+}
+
+div#slider-control {
+    padding: 10px;
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 800px;
+}
+
+div#slider {
+    margin-left: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 2px #ddd inset;
+}
+
+#axis path {
+    fill: none;
+}
+
+#axis .tick line {
+    stroke: #999;
+}
+
+#axis .tick text {
+    font-size: 12px;
+}
+
+#slider-probe{
+    position: absolute;
+    top: -20px;
+    font-size: 12px;
+    width: 70px;
+    margin-left: -5px;
+    z-index: 50;
+    display: none;
+}
+
+#slider-probe p{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    height: 15px;
+}
+
+#slider-probe div{
+    height: 15px;
+    margin-left: 35px;
+    border-left: 1px solid #999;
+}
