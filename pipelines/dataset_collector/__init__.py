@@ -1,1 +1,1 @@
-from dataset_collector import DatasetCollectorPipeline
+from .dataset_collector import DatasetCollectorPipeline

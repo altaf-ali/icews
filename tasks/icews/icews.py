@@ -30,11 +30,11 @@ class DatasetDownloader(GenericTask):
             dataset = dataverse.request("datasets", dataset_id)
 
             for f in dataset['data']['latestVersion']['files']:
-                file_id = str(f['datafile']['id'])
+                file_id = str(f['dataFile']['id'])
                 url = dataverse.url("access/datafile", file_id)
 
-                filename = f['datafile']['name']
-                checksum = f['datafile']['md5']
+                filename = f['dataFile']['filename']
+                checksum = f['dataFile']['md5']
                 target = os.path.join(self.ICEWS_DATASET_FOLDER, dataset_id, filename)
 
                 if os.path.isfile(target) and utils.md5.file_checksum(target, hex=True) == checksum:
